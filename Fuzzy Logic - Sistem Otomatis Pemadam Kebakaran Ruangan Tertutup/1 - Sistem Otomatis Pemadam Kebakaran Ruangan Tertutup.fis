@@ -1,0 +1,91 @@
+[System]
+Name='projek akhir'
+Type='mamdani'
+Version=2.0
+NumInputs=3
+NumOutputs=2
+NumRules=36
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Suhu'
+Range=[0 50]
+NumMFs=3
+MF1='Dingin':'trapmf',[0 0 10 25]
+MF2='Normal':'trimf',[10 25 40]
+MF3='Panas':'trapmf',[25 40 50 50]
+
+[Input2]
+Name='Asap'
+Range=[0 100]
+NumMFs=3
+MF1='Tipis':'trapmf',[0 0 25 50]
+MF2='Sedang':'trimf',[25 50 75]
+MF3='Tebal':'trapmf',[50 75 100 100]
+
+[Input3]
+Name='Api'
+Range=[0 1000]
+NumMFs=4
+MF1='Dekat':'trapmf',[0 0 100 300]
+MF2='Jauh':'trapmf',[400 600 700 900]
+MF3='TidakAda':'trapmf',[700 900 1000 1000]
+MF4='SedikitDekat':'trapmf',[100 300 400 600]
+
+[Output1]
+Name='Kipas'
+Range=[0 250]
+NumMFs=3
+MF1='Lambat':'trimf',[0 64.5 125]
+MF2='Sedang':'trimf',[64.5 125 189.5]
+MF3='Cepat':'trimf',[125 189.5 250]
+
+[Output2]
+Name='Pompa'
+Range=[0 120]
+NumMFs=3
+MF1='Singkat':'trimf',[0 30 60]
+MF2='SedikitLama':'trimf',[30 60 90]
+MF3='Lama':'trimf',[60 90 120]
+
+[Rules]
+1 1 2, 1 1 (1) : 1
+1 1 4, 1 2 (1) : 1
+1 1 1, 1 3 (1) : 1
+1 2 3, 2 0 (1) : 1
+1 2 2, 2 1 (1) : 1
+1 2 4, 2 2 (1) : 1
+1 2 1, 2 3 (1) : 1
+1 3 3, 3 0 (1) : 1
+1 3 2, 3 1 (1) : 1
+1 3 4, 3 2 (1) : 1
+1 3 1, 3 3 (1) : 1
+2 1 2, 1 1 (1) : 1
+2 1 4, 1 2 (1) : 1
+2 1 1, 1 3 (1) : 1
+2 2 3, 2 0 (1) : 1
+2 2 2, 2 1 (1) : 1
+2 2 4, 2 2 (1) : 1
+2 2 1, 2 3 (1) : 1
+2 3 3, 3 0 (1) : 1
+2 3 2, 3 1 (1) : 1
+2 3 4, 3 2 (1) : 1
+2 3 1, 3 3 (1) : 1
+3 1 2, 1 1 (1) : 1
+3 1 4, 1 2 (1) : 1
+3 1 1, 1 3 (1) : 1
+3 2 3, 2 0 (1) : 1
+3 2 2, 2 1 (1) : 1
+3 2 4, 2 2 (1) : 1
+3 2 1, 2 3 (1) : 1
+3 3 3, 3 0 (1) : 1
+3 3 2, 3 1 (1) : 1
+3 3 4, 3 2 (1) : 1
+3 3 1, 3 3 (1) : 1
+1 1 3, 2 0 (1) : 1
+2 1 3, 2 0 (1) : 1
+3 1 3, 2 0 (1) : 1
