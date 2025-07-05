@@ -1,5 +1,6 @@
 
 # A. Pengenalan Sistem Otomatis Pemadam Kebakaran Ruangan Tertutup 🔥🔥
+Smart System - Fuzzy Logic
 
 > Sistem otomatis pemadam kebakaran ruangan tertutup merupakan salah satu solusi keamanan yang dirancang khusus untuk melindungi berbagai area, terutama pada area yang bersifat kritikal dan sensitif dari risiko kebakaran. Berbeda dengan sistem pemadam konvensional, sistem ini bekerja di lingkungan tertutup dan biasanya menggunakan media pemadam non-air seperti gas, aerosol, atau bahan kimia kering. Sistem ini banyak digunakan di ruang server, ruang arsip, laboratorium, ruang penyimpanan barang berharga, dan area industri yang tidak memungkinkan penggunaan air karena dapat merusak peralatan atau material yang ada. Salah satu pendekatan modern dalam pengembangan sistem pemadam ruangan tertutup adalah penggunaan logika fuzzy untuk menentukan respon sistem secara cerdas dan adaptif terhadap berbagai kemungkinan kondisi faktor penyebab yang terjadi.
 
